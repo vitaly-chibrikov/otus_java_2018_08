@@ -10,11 +10,21 @@ import java.util.Comparator;
  * <p>
  * пишите параметром запуска файл source.csv,
  * запускайте.
+ *
+ * Ссылка на опрос: https://otus.pw/3dJg/
  */
 
 public class MainStream {
     public static void main(String[] args) throws IOException {
-        String salt = "Remind yourself that overconfidence is a slow and insidious killer";
+        String salt = "Serj Reds\u200BСъешь ещё этих мягких французских булок, да выпей же чаю.\n" +
+                "\n" +
+                "Данила Икрянников\u200Bпри коллизии хэша сортировка не детерминирована\n" +
+                "\n" +
+                "Евгений Витольдович\u200BЛучше 1 раз сделать, чем 100 раз увидеть.\n" +
+                "\n" +
+                "Dmitry Lyutenko\u200BСовы не те, кем кажутся.\n" +
+                "\n" +
+                "Евгений Нет\u200BHello, world!";
 
         Files.lines(Paths.get(args[0]))
                 .map(String::trim)
