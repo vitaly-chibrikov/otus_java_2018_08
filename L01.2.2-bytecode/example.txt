@@ -1,0 +1,174 @@
+Classfile /D:/home/harbour/otus.ru/2018-08/step-01/L01-Maven/examples/L01.2.2-bytecode/target/classes/ru/otus/l1/BytecodeExample.class
+  Last modified 7 сент. 2018 г.; size 1356 bytes
+  MD5 checksum d94a5d545be421762fba332e9e150c60
+  Compiled from "BytecodeExample.java"
+public class ru.otus.l1.BytecodeExample
+  minor version: 0
+  major version: 54
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #4                          // ru/otus/l1/BytecodeExample
+  super_class: #10                        // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #10.#35        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #4.#36         // ru/otus/l1/BytecodeExample.name:Ljava/lang/String;
+   #3 = String             #37            // Tully
+   #4 = Class              #38            // ru/otus/l1/BytecodeExample
+   #5 = Methodref          #4.#39         // ru/otus/l1/BytecodeExample."<init>":(Ljava/lang/String;)V
+   #6 = Methodref          #4.#40         // ru/otus/l1/BytecodeExample.getAnswer:()J
+   #7 = Fieldref           #41.#42        // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = InvokeDynamic      #0:#46         // #0:makeConcatWithConstants:(Ljava/lang/String;J)Ljava/lang/String;
+   #9 = Methodref          #47.#48        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #10 = Class              #49            // java/lang/Object
+  #11 = Utf8               name
+  #12 = Utf8               Ljava/lang/String;
+  #13 = Utf8               <init>
+  #14 = Utf8               (Ljava/lang/String;)V
+  #15 = Utf8               Code
+  #16 = Utf8               LineNumberTable
+  #17 = Utf8               LocalVariableTable
+  #18 = Utf8               this
+  #19 = Utf8               Lru/otus/l1/BytecodeExample;
+  #20 = Utf8               main
+  #21 = Utf8               ([Ljava/lang/String;)V
+  #22 = Utf8               args
+  #23 = Utf8               [Ljava/lang/String;
+  #24 = Utf8               example
+  #25 = Utf8               size
+  #26 = Utf8               J
+  #27 = Utf8               getAnswer
+  #28 = Utf8               ()J
+  #29 = Utf8               a
+  #30 = Utf8               I
+  #31 = Utf8               b
+  #32 = Utf8               c
+  #33 = Utf8               SourceFile
+  #34 = Utf8               BytecodeExample.java
+  #35 = NameAndType        #13:#50        // "<init>":()V
+  #36 = NameAndType        #11:#12        // name:Ljava/lang/String;
+  #37 = Utf8               Tully
+  #38 = Utf8               ru/otus/l1/BytecodeExample
+  #39 = NameAndType        #13:#14        // "<init>":(Ljava/lang/String;)V
+  #40 = NameAndType        #27:#28        // getAnswer:()J
+  #41 = Class              #51            // java/lang/System
+  #42 = NameAndType        #52:#53        // out:Ljava/io/PrintStream;
+  #43 = Utf8               BootstrapMethods
+  #44 = MethodHandle       6:#54          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #45 = String             #55            // The answer for \u0001 is: \u0001
+  #46 = NameAndType        #56:#57        // makeConcatWithConstants:(Ljava/lang/String;J)Ljava/lang/String;
+  #47 = Class              #58            // java/io/PrintStream
+  #48 = NameAndType        #59:#14        // println:(Ljava/lang/String;)V
+  #49 = Utf8               java/lang/Object
+  #50 = Utf8               ()V
+  #51 = Utf8               java/lang/System
+  #52 = Utf8               out
+  #53 = Utf8               Ljava/io/PrintStream;
+  #54 = Methodref          #60.#61        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #55 = Utf8               The answer for \u0001 is: \u0001
+  #56 = Utf8               makeConcatWithConstants
+  #57 = Utf8               (Ljava/lang/String;J)Ljava/lang/String;
+  #58 = Utf8               java/io/PrintStream
+  #59 = Utf8               println
+  #60 = Class              #62            // java/lang/invoke/StringConcatFactory
+  #61 = NameAndType        #56:#66        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #62 = Utf8               java/lang/invoke/StringConcatFactory
+  #63 = Class              #68            // java/lang/invoke/MethodHandles$Lookup
+  #64 = Utf8               Lookup
+  #65 = Utf8               InnerClasses
+  #66 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #67 = Class              #69            // java/lang/invoke/MethodHandles
+  #68 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #69 = Utf8               java/lang/invoke/MethodHandles
+{
+  public ru.otus.l1.BytecodeExample(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #2                  // Field name:Ljava/lang/String;
+         9: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 4
+        line 15: 9
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Lru/otus/l1/BytecodeExample;
+            0      10     1  name   Ljava/lang/String;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=5, args_size=1
+         0: ldc           #3                  // String Tully
+         2: astore_1
+         3: new           #4                  // class ru/otus/l1/BytecodeExample
+         6: dup
+         7: aload_1
+         8: invokespecial #5                  // Method "<init>":(Ljava/lang/String;)V
+        11: astore_2
+        12: aload_2
+        13: invokevirtual #6                  // Method getAnswer:()J
+        16: lstore_3
+        17: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        20: aload_2
+        21: getfield      #2                  // Field name:Ljava/lang/String;
+        24: lload_3
+        25: invokedynamic #8,  0              // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;J)Ljava/lang/String;
+        30: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        33: return
+      LineNumberTable:
+        line 18: 0
+        line 19: 3
+        line 20: 12
+        line 21: 17
+        line 22: 33
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      34     0  args   [Ljava/lang/String;
+            3      31     1  name   Ljava/lang/String;
+           12      22     2 example   Lru/otus/l1/BytecodeExample;
+           17      17     3  size   J
+
+  public long getAnswer();
+    descriptor: ()J
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: iconst_5
+         3: istore_2
+         4: iload_1
+         5: iload_2
+         6: ishl
+         7: istore_3
+         8: iload_3
+         9: bipush        10
+        11: iadd
+        12: i2l
+        13: lreturn
+      LineNumberTable:
+        line 25: 0
+        line 26: 2
+        line 27: 4
+        line 28: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0  this   Lru/otus/l1/BytecodeExample;
+            2      12     1     a   I
+            4      10     2     b   I
+            8       6     3     c   I
+}
+SourceFile: "BytecodeExample.java"
+InnerClasses:
+  public static final #64= #63 of #67;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #44 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #45 The answer for \u0001 is: \u0001
