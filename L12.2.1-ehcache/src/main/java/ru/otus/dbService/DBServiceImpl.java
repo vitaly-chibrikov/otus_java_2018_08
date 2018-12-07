@@ -26,6 +26,8 @@ import java.util.function.Function;
  * @author v.chibrikov
  */
 public class DBServiceImpl implements DBService {
+    private static final String CACHE_MANAGER_NAME = "L12_MANAGER_NAME";
+
     private final SessionFactory sessionFactory;
 
     public DBServiceImpl() {
@@ -61,14 +63,8 @@ public class DBServiceImpl implements DBService {
     }
 
     private void configurePool(Map<String, Object> settings) {
-        // HikariCP settings
-        // Maximum waiting time for a connection from the pool
         settings.put("hibernate.hikari.connectionTimeout", "20000");
-        // Minimum number of ideal connections in the pool
         settings.put("hibernate.hikari.minimumIdle", "10");
-        // Maximum number of actual connection in the pool
-        settings.put("hibernate.hikari.maximumPoolSize", "20");
-        // Maximum time that a connection is allowed to sit ideal in the pool
         settings.put("hibernate.hikari.idleTimeout", "300000");
     }
 
@@ -85,7 +81,7 @@ public class DBServiceImpl implements DBService {
     }
 
     private void registerCacheMBean() {
-        CacheManager manager = CacheManager.getInstance();
+        CacheManager manager = CacheManager.getCacheManager(CACHE_MANAGER_NAME);
         MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
         ManagementService.registerMBeans(manager, mBeanServer, false, false, true, true);
     }

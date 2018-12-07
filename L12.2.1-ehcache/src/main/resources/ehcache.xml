@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ehcache>
+<ehcache name="L12_MANAGER_NAME">
+
     <defaultCache maxEntriesLocalHeap="10" eternal="false" timeToIdleSeconds="600" timeToLiveSeconds="30">
 
     </defaultCache>
@@ -17,4 +18,5 @@
            maxEntriesLocalHeap="100"
            eternal="true">
     </cache>
+
 </ehcache>

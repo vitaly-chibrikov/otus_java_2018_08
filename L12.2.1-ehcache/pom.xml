@@ -6,7 +6,7 @@
 
     <groupId>ru.otus</groupId>
     <artifactId>L12.2.1-ehcache</artifactId>
-     <version>2018-06</version>
+     <version>2018-08</version>
 
     <properties>
         <maven.compiler.source>1.10</maven.compiler.source>

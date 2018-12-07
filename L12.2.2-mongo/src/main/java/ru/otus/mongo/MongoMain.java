@@ -42,7 +42,7 @@ public class MongoMain {
 
     MongoMain() {
         mongoClient = new MongoClient("localhost", 27017);
-        mongoDatabase = mongoClient.getDatabase("testdb"); //create if not exist
+        mongoDatabase = mongoClient.getDatabase("tsetdb"); //create if not exist
     }
 
     public static void main(String[] args) {
